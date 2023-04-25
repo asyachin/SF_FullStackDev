@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CSS Pseudo Class</title>
+</head>
+
+<body>
+	<h1 class="site-heading">Добро пожаловать на сайт нашей студии!</h1>
+
+	<form action="" method="GET">
+		<input type="text" name="login" placeholder="Введите свой логин">
+		<button type="submit">Отправить</button>
+
+		<!-- Первый способ — обернуть поле в лейбл: -->
+
+		<form action="" method="GET">
+			<label>Логин:
+				<input type="text" name="login" placeholder="Введите свой логин">
+			</label>
+			<button type="submit">Отправить</button>
+		</form>
+	</form>
+
+	<!-- Второй способ — связать их через атрибут for у лейбла и id у поля. Это как раз тот случай, когда идентификатор полезен: -->
+	<form action="" method="GET">
+           	<label for="login">Логин: </label>
+           	<input type="text" name="login" id="login" placeholder="Введите свой логин">
+           	<button type="submit">Отправить</button>
+   </form>
+</body>
+
+</html>
