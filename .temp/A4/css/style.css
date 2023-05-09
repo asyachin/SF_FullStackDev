@@ -1,9 +1,0 @@
-
-.site-heading ::before {
-	content: '\23AF';
-	padding-right: 15px;
-}
-.site-heading ::after {
-	content: '\23AF';
-	padding-left: 15px;
-}
